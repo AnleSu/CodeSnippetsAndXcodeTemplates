@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_UCarRefresh</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)headerRefresh {
+    UCARRefreshCustomHeader * customHeader = [UCARRefreshCustomHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerDataRequest)];
+    self.&lt;#tableView#&gt;.mj_header = customHeader;
+}
+
+- (void)footerRefresh {
+    UCarRefreshCustomFooter *footer = [UCarRefreshCustomFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerDataRequest)];
+    [footer customFooterUI];
+    self.&lt;#tableView#&gt;.mj_footer = footer;
+}
+
+- (void)headerDataRequest {
+    self.pageNumber = 1;
+    &lt;#请求#&gt;
+}
+
+- (void)footerDataRequest {
+    self.pageNumber++;
+    &lt;#请求#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>24E36FEF-5A6A-4170-B8CB-E1590189E6A3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Ucar上拉下拉刷新集合</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Ucar上拉下拉刷新集合</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

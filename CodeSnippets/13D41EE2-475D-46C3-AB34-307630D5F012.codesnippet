@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_createCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 将其移动到interface中
+@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
+
+#pragma mark - UICollectionView DataSource and Delegate
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return &lt;#numbers#&gt;;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    &lt;#collectionViewcell#&gt; *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (UICollectionViewFlowLayout *)flowLayout {
+    if (!_flowLayout) {
+        _flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        _flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        _flowLayout.itemSize = CGSizeMake(&lt;#width#&gt;,&lt;#height#&gt;);
+        _flowLayout.minimumInteritemSpacing = &lt;#CGFloat#&gt;;
+        _flowLayout.minimumLineSpacing = &lt;#CGFloat#&gt;;
+    }
+    return _flowLayout;
+}
+
+static NSString *const identify = @"collectionViewCell";
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:&lt;#frame#&gt; collectionViewLayout:self.flowLayout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        [_collectionView registerClass:[&lt;#collectionViewcell#&gt; class] forCellWithReuseIdentifier:identify];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+    }
+    return _collectionView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>13D41EE2-475D-46C3-AB34-307630D5F012</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建collectionView 方法集合</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建collectionView 方法集合</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

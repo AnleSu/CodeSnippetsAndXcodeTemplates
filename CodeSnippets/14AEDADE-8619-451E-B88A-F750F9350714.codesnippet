@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_createTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+// 将其移动到interface中
+@property (nonatomic, strong) UITableView *tableView;
+
+#pragma mark - UITableViewDataSource
+
+//设置Sections的个数
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#NSInteger number#&gt;;
+}
+
+//设置row的个数
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return &lt;#NSInteger number#&gt;;
+}
+
+//设置cell的内容
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *Identifier = &lt;#NSString identifier#&gt;;
+    &lt;#UITableViewCell cell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+    if (cell == nil) {
+        cell = [[&lt;#UITableViewCell cell#&gt;  alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Identifier];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    }
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+//设置cell的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return &lt;#CGFloat height#&gt;;
+}
+//设置Sections的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return &lt;#CGFloat height#&gt;;
+}
+//cell的点击事件
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor clearColor];
+        //cell分割线的风格
+        [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    }
+    return _tableView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>14AEDADE-8619-451E-B88A-F750F9350714</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建tableview 方法集合</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建tableview 方法集合</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

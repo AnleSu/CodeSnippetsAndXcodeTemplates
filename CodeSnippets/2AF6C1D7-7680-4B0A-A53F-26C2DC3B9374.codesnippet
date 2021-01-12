@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_getBtn</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#UIButton#&gt; {
+    if (!_&lt;#UIButton#&gt;) {
+        _&lt;#UIButton#&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_&lt;#UIButton#&gt; setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [_&lt;#UIButton#&gt; addTarget:self action:@selector(&lt;#UIButton#&gt;Fun) forControlEvents:UIControlEventTouchDown];
+    }
+    return _&lt;#UIButton#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2AF6C1D7-7680-4B0A-A53F-26C2DC3B9374</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>button的get方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>button的get方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

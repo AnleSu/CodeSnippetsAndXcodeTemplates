@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_shadowStr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:&lt;#title#&gt;];
+//设置字体
+UIFont *baseFont = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt;];
+[attrString addAttribute:NSFontAttributeName value:baseFont range:NSMakeRange(0, [&lt;#title#&gt; length])];//设置所有的字体
+// 设置颜色
+[attrString addAttribute:NSForegroundColorAttributeName value:&lt;#color#&gt; range:NSMakeRange(0, [&lt;#title#&gt; length])];
+NSShadow * shadow = [[NSShadow alloc] init];
+shadow.shadowColor = &lt;#shadowColor#&gt;;
+shadow.shadowOffset = CGSizeMake(0, 2);
+shadow.shadowBlurRadius = 5;
+[attrString addAttribute:NSShadowAttributeName value:shadow range:NSMakeRange(0, [&lt;#title#&gt; length])];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>65A2D4D6-DBB8-4A53-A672-3CA891E50F68</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>设置带有阴影的字体</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>设置带有阴影的字体</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

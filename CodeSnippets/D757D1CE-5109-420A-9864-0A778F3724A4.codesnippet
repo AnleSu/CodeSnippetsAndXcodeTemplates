@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_getLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UILabel *)&lt;#UILabel#&gt; {
+    if (!_&lt;#UILabel#&gt;) {
+        _&lt;#UILabel#&gt; = [[UILabel alloc]init];
+        _&lt;#UILabel#&gt;.textColor = ;
+        _&lt;#UILabel#&gt;.font = ;
+    }
+    return _&lt;#UILabel#&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D757D1CE-5109-420A-9864-0A778F3724A4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>label的get方法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>label的get方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

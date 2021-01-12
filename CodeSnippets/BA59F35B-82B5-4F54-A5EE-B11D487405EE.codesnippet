@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_diffentStr</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSMutableAttributedString *)setAttrStr:(NSString *)str subText:(NSString*)subText {
+    NSString *string = [NSString stringWithFormat:@"%@", str];
+    NSRange range = [string rangeOfString:subText];
+    NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] initWithString:string];
+    [aString setAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:&lt;#字体大小#&gt;], NSForegroundColorAttributeName:&lt;#字体颜色#&gt;}
+                     range:range];
+    return aString;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BA59F35B-82B5-4F54-A5EE-B11D487405EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>属性字符串</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>属性字符串</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
